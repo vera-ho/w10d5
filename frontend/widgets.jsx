@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './app'
+import Clock from './clock'
 
 document.addEventListener("DOMContentLoaded", () => {
     const root = document.getElementById('root');
@@ -10,5 +10,5 @@ document.addEventListener("DOMContentLoaded", () => {
   
     const hello = <h1>Hello from React :D</h1>
   
-    ReactDOM.render(<App />, root)
+    ReactDOM.render(<Clock />, root)
   })
