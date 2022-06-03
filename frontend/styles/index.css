@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+.gtc {
+    font-family: 'Kdam Thmor Pro', Arial, Helvetica, sans-serif;
+    font-size: larger;
+    text-align: center;
+    
+    border: center, dashed, 2px, white;
+    background-color: black;
+    color: rgb(11, 250, 11);
+
+    padding: 25px;
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%, 0%);
+}
+
+body {
+    background-color: rgb(49, 86, 11);
+    
+}

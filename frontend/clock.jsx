@@ -11,14 +11,28 @@ class Clock extends React.Component {
     this.tick = this.tick.bind(this);
   }
 
-  tick(e) {
-    e.preventDefault();
+  tick() {
     this.setState({ date: new Date() })
   }
 
+  componentDidMount() {
+    this.dateTick = setInterval(this.tick, 1000)
+  }
+
+  componentWillUnmount() {
+    clearInterval(this.dateTick);
+  }
+
   render() {
+
+
+
     return (
-      <h1>George The Clock {this.state.date.getSeconds()}</h1>
+      <div className='gtc'>
+        <h1>George The Clock </h1>
+        <h1>{this.state.date.toDateString()}</h1>
+        <h1>{this.state.date.toLocaleTimeString()}</h1>
+      </div>
     )
   }
 
