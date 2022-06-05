@@ -4,9 +4,9 @@ import Clock from './clock'
 import Tabs from './tabs'
 
 const tabArr = [
-  {title: 'Sprite', content: 'More Sprite'},
-  {title: "CocaCola", content: 'More Coke'},
-  {title: "GingerAle", content: 'Mmm Ginger'}
+  {title: 'Sprite', content: 'SPRITE: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'},
+  {title: "CocaCola", content: 'COKE: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'},
+  {title: "GingerAle", content: 'GINGER!: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}
 ]
 
 document.addEventListener("DOMContentLoaded", () => {

@@ -21,19 +21,23 @@ body {
     height: 100vh;
 }
 
-.tab-div {
+.tabWidget {
     position: absolute;
-    top: 35%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, 0%);
+}
+
+.tab-div {
+    display: flex;
+    flex: row;
 }
 
 .tab-header {
     border: 1px white solid;
     border-radius: 5px;
+    box-sizing: border-box;
     width: 100px;
-    display: flex;
-    flex: row;
 
     font-family: 'Kdam Thmor Pro', Arial, Helvetica, sans-serif;
     font-size: medium;
@@ -53,5 +57,5 @@ h1.tab-header:hover {
     /* text-align: center; */
     border: 1px white solid;
     border-radius: 5px;
-    width: 100px;
+    width: 300px;
 }

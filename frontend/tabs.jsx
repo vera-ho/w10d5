@@ -12,24 +12,24 @@ class Tabs extends React.Component {
   }
 
   setTab(idx) {
-    this.setState({ tabId: idx }, () => {
-      console.log(this.state.tabId)
-    })
+    this.setState({ tabId: idx });
   }
 
   render() {
+    let content = this.props.tabArr[this.state.tabId].content;
     const tabWidget = this.props.tabArr.map( (el ,idx) => {
       return (
-        <div key={idx} className="tab-div" onClick={ () => {this.setTab(idx)}}>
-          <h1 className="tab-header">{el.title}</h1>
-        </div>)
+          <h1 key={idx} className="tab-header" onClick={ () => {this.setTab(idx)}}>
+            {el.title}
+          </h1>
+        )
     })
-
-    let content = this.props.tabArr[this.state.tabId].content;
 
     return (
       <div className="tabWidget">
-        {tabWidget}
+        <div className="tab-div">
+          {tabWidget}
+        </div>
         <article className="tab-content">{content}</article>
       </div>
     )
