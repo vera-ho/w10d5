@@ -10,9 +10,10 @@ class Tabs extends React.Component {
   }
 
   render() {
-
-    const tabWidget = this.props.items.map((el, idx) => {
-      return <h1 key={idx}>{el}</h1>
+    // console.log(this.props)
+    // console.log(this.props.tabArr[0]["title"])
+    const tabWidget = this.props.tabArr.map( (el, idx) => {
+      return <div key={el["title"]}>{el["content"]}</div>
     })
 
     return (
@@ -21,9 +22,7 @@ class Tabs extends React.Component {
       </div>
     )
   }
-
-
 }
 
-export default Tabs
+export default Tabs;
 

@@ -4,8 +4,8 @@ import Clock from './clock'
 import Tabs from './tabs'
 
 const tabArr = [
-  {Title: 'Sprite', Content: 'More Sprite'},
-  {Title: "CocaCola", Content: 'More Coke'}
+  {title: 'Sprite', content: 'More Sprite'},
+  {title: "CocaCola", content: 'More Coke'}
 ]
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
     ReactDOM.render(
       <div>
         <Clock/>
-        <Tabs tabArr={tabArr}/>
+        <Tabs tabArr={tabArr} />
       </div>,
       root
     )
