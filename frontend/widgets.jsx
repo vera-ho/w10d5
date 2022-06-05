@@ -5,7 +5,8 @@ import Tabs from './tabs'
 
 const tabArr = [
   {title: 'Sprite', content: 'More Sprite'},
-  {title: "CocaCola", content: 'More Coke'}
+  {title: "CocaCola", content: 'More Coke'},
+  {title: "GingerAle", content: 'Mmm Ginger'}
 ]
 
 document.addEventListener("DOMContentLoaded", () => {
